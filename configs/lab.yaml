@@ -1,16 +1,32 @@
 # ============================================================
-# Group config — EDIT ME (one per group). Values here override
-# the track defaults loaded from `track_config`.
+# Group config — G00 (Day06, track t06 · Semantic Integrity & Provenance Gate)
+# Values here override the track defaults loaded from `track_config`.
 # ============================================================
-group_id: G00                     # e.g. G07
-owner: "TODO: tên người ký duyệt (role)"   # mandatory for every Decision
-track_config: tracks/t02.yaml     # pick your challenge: tracks/t01.yaml ... tracks/t14.yaml
-track: t02                        # must match track_config
-input: fixtures/t02_raw_qc        # or data/real/... if your instructor provided a real pack
+group_id: G00
+owner: "QA Lead — Group G00"       # signer of every Decision (change to a real name/role)
+track_config: tracks/t06.yaml
+track: t06
+input: fixtures/t06_release_gate
 output: out/
 seed: 42
-offline: true                     # demo/eval must not touch the network
-strict_provenance: true           # fail if manifest.csv hashes do not match
+offline: true                      # demo/eval must not touch the network
+strict_provenance: true            # fail if manifest.csv hashes do not match
 
-# Track params (merged over track_config.params). Freeze before evaluation.
-params: {}
+# ------------------------------------------------------------------
+# FROZEN params (chốt TRƯỚC khi xem kết quả eval; không tune lại sau).
+# Ngưỡng được chọn từ thống kê split `dev` (r01–r10): jitter bbox lành tính
+# của vendor ≤ 1.00 px (max đo được trên dev), corrupt shift ≥ 7.89 px →
+# shift_tol_px nằm giữa hai cụm. Không dùng nhãn, không đụng split eval —
+# xem reports/metric_contract.md mục Threshold policy.
+# ------------------------------------------------------------------
+params:
+  budget: 12                       # review budget B (10 release lỗi + top warnings)
+  parent_release: releases/v1.0    # tham chiếu invariant (input, KHÔNG phải gt/)
+  shift_tol_px: 5.0                # |dx|/|dy| > 5 px = không còn là jitter lành tính
+  min_shift_frac: 0.05             # ≥ 5% annotation bị dịch → họ lỗi bbox_shift
+  bbox_tol_px: 0.5                 # dung sai bbox chạm mép ảnh (bbox ngoài ảnh → block)
+
+  decision:                        # policy HOLD/REWORK per release + batch
+    rework_min_families: 2         # release bị ≥ 2 họ lỗi cùng lúc → REWORK
+    go_max_block_rate: 0.0         # batch: chỉ GO khi 0 release bị chặn
+    rework_min_block_rate: 0.30    # batch: ≥ 30% release bị chặn → REWORK
