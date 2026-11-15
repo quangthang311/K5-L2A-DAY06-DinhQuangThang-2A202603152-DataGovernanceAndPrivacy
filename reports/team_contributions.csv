@@ -1,6 +1,6 @@
-member,git_author_name,git_email,role,modules_files,commit_shas,evidence_note,presenter
-Member 1,,,Lead / Integrator,src/main.py; configs/,,,
-Member 2,,,Data & fixtures,fixtures/; tools/,,,
-Member 3,,,Core algorithm,src/pipeline.py,,,
-Member 4,,,QA / metric,tests/; reports/metrics_*.json,,,
-Member 5,,,Human review + report,reports/group_report.md; demo/,,,
+member,git_author_name,git_email,role,modules_files,commit_shas,evidence_note,presenter,
+Member 1,DINH QUANG THANG,26ai.thangdq4@vinuni.edu.vn,Lead / Integrator,src/main.py; configs/lab.yaml; configs/tracks/t06.yaml,TODO-sha,Chốt config + freeze params (shift_tol_px 5.0, min_shift_frac 0.05) trước khi eval,Member 1
+,,,Data & fixtures,fixtures/t06_release_gate; verify manifest 245 sha256; provenance parent_sha256,TODO-sha,Verify manifest 0 problem + phân tích parent v1.0 (round-trip COCO↔YOLO 0 mismatch),Member 2,
+,,,Core algorithm,src/pipeline.py; src/baseline.py,TODO-sha,Gate 8 họ invariant (class_swap/stale_map/id_collision/dropped_frames/bbox_shift/schema/provenance/dangling) + baseline parse+file-exists,Member 3,
+,,,QA / metric,tests/test_pipeline_t06.py; tests/test_cli.py; reports/metric_contract.md,TODO-sha,11 test (E2E + sanity + edge + unit 5 họ lỗi) + metric contract + determinism check,Member 4,
+,,,Human review + report,reports/group_report.md; out/poc/contact_sheet.html; release_diffs.json; demo/DEMO.md,TODO-sha,Review queue + override flow + audit log + 3 failure case + demo script,Member 5,

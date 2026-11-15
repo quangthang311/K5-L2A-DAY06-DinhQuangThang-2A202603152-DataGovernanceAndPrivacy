@@ -1,0 +1,4 @@
+ts,scope,status,canonical,reason_code,reason,owner,evidence
+2026-11-13T21:14:18+00:00,t06,REWORK,REWORK,SEMANTIC_VIOLATIONS_BLOCK_RATE,10/20 releases (0.50) break semantic invariants vs parent — batch needs rework; per-release HOLD/PASS in release_decisions.csv.,QA Lead — Group G00,out\poc\release_decisions.csv;out\poc\release_diffs.json
+2026-11-13T21:17:09+00:00,t06,REWORK,REWORK,SEMANTIC_VIOLATIONS_BLOCK_RATE,10/20 releases (0.50) break semantic invariants vs parent — batch needs rework; per-release HOLD/PASS in release_decisions.csv.,QA Lead — Group G00,out\poc\release_decisions.csv;out\poc\release_diffs.json
+2026-11-13T21:20:04+00:00,t06,REWORK,REWORK,SEMANTIC_VIOLATIONS_BLOCK_RATE,10/20 releases (0.50) break semantic invariants vs parent — batch needs rework; per-release HOLD/PASS in release_decisions.csv.,QA Lead — Group G00,out\poc\release_decisions.csv;out\poc\release_diffs.json
