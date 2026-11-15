@@ -1,0 +1,13 @@
+rank,item_id,score,reason,suggested_action,slice,evidence_path,reviewer,reviewer_decision,override_value,review_note,reviewed_at
+1,r01,1.0,"44 annotations reference category ids [5] absent from this release's categories; declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}",HOLD,dev,releases/candidates/r01,,,,,
+2,r07,1.0,"category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}",HOLD,dev,releases/candidates/r07,,,,,
+3,r08,1.0,"12 duplicate annotation ids (e.g. [79, 175, 181, 223, 315]); id-based diff suppressed",HOLD,dev,releases/candidates/r08,,,,,
+4,r09,1.0,"44 annotations reference category ids [5] absent from this release's categories; declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}",HOLD,dev,releases/candidates/r09,,,,,
+5,r18,1.0,"11 duplicate annotation ids (e.g. [45, 58, 98, 108, 214]); id-based diff suppressed",HOLD,eval,releases/candidates/r18,,,,,
+6,r20,1.0,"category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}",HOLD,eval,releases/candidates/r20,,,,,
+7,r05,0.602582,"210/697 annotations moved > 5.0 px vs parent (max 29.75 px, e.g. [84, 624, 69, 388, 390])",HOLD,dev,releases/candidates/r05,,,,,
+8,r10,0.602582,"210/697 annotations moved > 5.0 px vs parent (max 29.85 px, e.g. [540, 261, 597, 326, 313])",HOLD,dev,releases/candidates/r10,,,,,
+9,r02,0.59,"frame_index gaps [{'sequence': 'seq3', 'after_frame': 4, 'next_frame': 13, 'missing': 8}, {'sequence': 'seq3', 'after_frame': 13, 'next_frame': 15, 'missing': 1}]; 9 parent images missing from candidate (e.g. [66, 67, 68, 69, 70]) with 63 annotations",HOLD,dev,releases/candidates/r02,,,,,
+10,r16,0.57,"frame_index gaps [{'sequence': 'seq1', 'after_frame': 4, 'next_frame': 12, 'missing': 7}]; 7 parent images missing from candidate (e.g. [26, 27, 28, 29, 30]) with 49 annotations",HOLD,eval,releases/candidates/r16,,,,,
+11,r03,0.25,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only",PASS,dev,releases/candidates/r03,,,,,
+12,r04,0.25,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only",PASS,dev,releases/candidates/r04,,,,,

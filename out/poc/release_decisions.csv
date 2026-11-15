@@ -1,0 +1,21 @@
+release_id,decision,split,path,score,root_cause,n_violations,n_warnings,violation_families,reason
+r01,HOLD,dev,releases/candidates/r01,1.0,stale_map,2,0,stale_map,"44 annotations reference category ids [5] absent from this release's categories; declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}"
+r02,HOLD,dev,releases/candidates/r02,0.59,dropped_frames,2,0,dropped_frames,"frame_index gaps [{'sequence': 'seq3', 'after_frame': 4, 'next_frame': 13, 'missing': 8}, {'sequence': 'seq3', 'after_frame': 13, 'next_frame': 15, 'missing': 1}]; 9 parent images missing from candidate (e.g. [66, 67, 68, 69, 70]) with 63 annotations"
+r03,PASS,dev,releases/candidates/r03,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r04,PASS,dev,releases/candidates/r04,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r05,HOLD,dev,releases/candidates/r05,0.602582,bbox_shift,1,0,bbox_shift,"210/697 annotations moved > 5.0 px vs parent (max 29.75 px, e.g. [84, 624, 69, 388, 390])"
+r06,PASS,dev,releases/candidates/r06,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r07,HOLD,dev,releases/candidates/r07,1.0,class_swap,1,0,class_swap,"category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}"
+r08,HOLD,dev,releases/candidates/r08,1.0,id_collision,1,1,id_collision,"12 duplicate annotation ids (e.g. [79, 175, 181, 223, 315]); id-based diff suppressed"
+r09,HOLD,dev,releases/candidates/r09,1.0,stale_map,2,0,stale_map,"44 annotations reference category ids [5] absent from this release's categories; declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}"
+r10,HOLD,dev,releases/candidates/r10,0.602582,bbox_shift,1,0,bbox_shift,"210/697 annotations moved > 5.0 px vs parent (max 29.85 px, e.g. [540, 261, 597, 326, 313])"
+r11,PASS,eval,releases/candidates/r11,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r12,PASS,eval,releases/candidates/r12,0.0,clean,0,0,-,no invariant broken
+r13,PASS,eval,releases/candidates/r13,0.0,clean,0,0,-,no invariant broken
+r14,PASS,eval,releases/candidates/r14,0.0,clean,0,0,-,no invariant broken
+r15,PASS,eval,releases/candidates/r15,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r16,HOLD,eval,releases/candidates/r16,0.57,dropped_frames,2,0,dropped_frames,"frame_index gaps [{'sequence': 'seq1', 'after_frame': 4, 'next_frame': 12, 'missing': 7}]; 7 parent images missing from candidate (e.g. [26, 27, 28, 29, 30]) with 49 annotations"
+r17,PASS,eval,releases/candidates/r17,0.0,clean,0,0,-,no invariant broken
+r18,HOLD,eval,releases/candidates/r18,1.0,id_collision,1,1,id_collision,"11 duplicate annotation ids (e.g. [45, 58, 98, 108, 214]); id-based diff suppressed"
+r19,PASS,eval,releases/candidates/r19,0.25,clean,0,2,-,"duplicate_file_entry: images/frame_000.jpg referenced by image ids [1, 101]; added_frames: 1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+r20,HOLD,eval,releases/candidates/r20,1.0,class_swap,1,0,class_swap,"category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}"

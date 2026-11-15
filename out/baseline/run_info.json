@@ -1,0 +1,29 @@
+{
+  "track": "t06",
+  "run_name": "baseline",
+  "status": 0,
+  "seed": 42,
+  "offline": true,
+  "input": "fixtures\\t06_release_gate",
+  "output": "out\\baseline",
+  "pipeline": "src.baseline",
+  "config_hash": "da9dff22194f",
+  "git_sha": null,
+  "runtime_seconds": 0.2934,
+  "stats": {
+    "n_releases": 20,
+    "n_blocked": 0,
+    "block_rate": 0.0,
+    "n_items": 20
+  },
+  "machine": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel"
+  },
+  "output_check": {
+    "pred_file": "out\\baseline\\release_decisions.csv",
+    "exists": true,
+    "missing_columns": []
+  }
+}

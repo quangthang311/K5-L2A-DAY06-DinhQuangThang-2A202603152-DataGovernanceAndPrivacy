@@ -1,0 +1,5 @@
+ts,scope,status,canonical,reason_code,reason,owner,evidence
+2026-11-13T21:14:23+00:00,t06,HOLD,HOLD,BASELINE_ONLY,"Parse/schema + file-existence baseline: 0/20 blocked, 0 semantic invariants checked — never release on this.",QA Lead — Group G00,out\baseline\release_decisions.csv
+2026-11-13T21:17:11+00:00,t06,HOLD,HOLD,BASELINE_ONLY,"Parse/schema + file-existence baseline: 0/20 blocked, 0 semantic invariants checked — never release on this.",QA Lead — Group G00,out\baseline\release_decisions.csv
+2026-11-13T21:20:05+00:00,t06,HOLD,HOLD,BASELINE_ONLY,"Parse/schema + file-existence baseline: 0/20 blocked, 0 semantic invariants checked — never release on this.",QA Lead — Group G00,out\baseline\release_decisions.csv
+2026-11-13T22:33:20+00:00,t06,HOLD,HOLD,BASELINE_ONLY,"Parse/schema + file-existence baseline: 0/20 blocked, 0 semantic invariants checked — never release on this.",QA Lead — Group G00,out\baseline\release_decisions.csv

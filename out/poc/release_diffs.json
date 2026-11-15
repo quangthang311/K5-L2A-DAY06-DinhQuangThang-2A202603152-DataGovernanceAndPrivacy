@@ -1,0 +1,532 @@
+{
+  "r01": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "stale_map",
+    "violations": [
+      {
+        "family": "stale_map",
+        "detail": "44 annotations reference category ids [5] absent from this release's categories"
+      },
+      {
+        "family": "stale_map",
+        "detail": "declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 4,
+      "id_join_ok": true,
+      "max_disp_px": 0.58,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r02": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "dropped_frames",
+    "violations": [
+      {
+        "family": "dropped_frames",
+        "detail": "frame_index gaps [{'sequence': 'seq3', 'after_frame': 4, 'next_frame': 13, 'missing': 8}, {'sequence': 'seq3', 'after_frame': 13, 'next_frame': 15, 'missing': 1}]"
+      },
+      {
+        "family": "dropped_frames",
+        "detail": "9 parent images missing from candidate (e.g. [66, 67, 68, 69, 70]) with 63 annotations"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 91,
+      "n_annotations": 634,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.78,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [
+        {
+          "sequence": "seq3",
+          "after_frame": 4,
+          "next_frame": 13,
+          "missing": 8
+        },
+        {
+          "sequence": "seq3",
+          "after_frame": 13,
+          "next_frame": 15,
+          "missing": 1
+        }
+      ],
+      "n_missing_parent_images": 9,
+      "n_added_images": 0
+    }
+  },
+  "r03": {
+    "split": "dev",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 1.0,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r04": {
+    "split": "dev",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.94,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r05": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "bbox_shift",
+    "violations": [
+      {
+        "family": "bbox_shift",
+        "detail": "210/697 annotations moved > 5.0 px vs parent (max 29.75 px, e.g. [84, 624, 69, 388, 390])"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 29.75,
+      "n_shifted": 210,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r06": {
+    "split": "dev",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.97,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r07": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "class_swap",
+    "violations": [
+      {
+        "family": "class_swap",
+        "detail": "category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.73,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r08": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "id_collision",
+    "violations": [
+      {
+        "family": "id_collision",
+        "detail": "12 duplicate annotation ids (e.g. [79, 175, 181, 223, 315]); id-based diff suppressed"
+      }
+    ],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_008.jpg referenced by image ids [8, 9]"
+      }
+    ],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": false,
+      "max_disp_px": 0.0,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r09": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "stale_map",
+    "violations": [
+      {
+        "family": "stale_map",
+        "detail": "44 annotations reference category ids [5] absent from this release's categories"
+      },
+      {
+        "family": "stale_map",
+        "detail": "declared label map 'lm-3' but shipped categories differ (missing/renamed): {5: {'declared': 'truck', 'shipped': None}}"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 4,
+      "id_join_ok": true,
+      "max_disp_px": 0.67,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r10": {
+    "split": "dev",
+    "decision": "HOLD",
+    "root_cause": "bbox_shift",
+    "violations": [
+      {
+        "family": "bbox_shift",
+        "detail": "210/697 annotations moved > 5.0 px vs parent (max 29.85 px, e.g. [540, 261, 597, 326, 313])"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 29.85,
+      "n_shifted": 210,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r11": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.99,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r12": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.42,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r13": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.76,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r14": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.95,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r15": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 1.0,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r16": {
+    "split": "eval",
+    "decision": "HOLD",
+    "root_cause": "dropped_frames",
+    "violations": [
+      {
+        "family": "dropped_frames",
+        "detail": "frame_index gaps [{'sequence': 'seq1', 'after_frame': 4, 'next_frame': 12, 'missing': 7}]"
+      },
+      {
+        "family": "dropped_frames",
+        "detail": "7 parent images missing from candidate (e.g. [26, 27, 28, 29, 30]) with 49 annotations"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 93,
+      "n_annotations": 648,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.92,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [
+        {
+          "sequence": "seq1",
+          "after_frame": 4,
+          "next_frame": 12,
+          "missing": 7
+        }
+      ],
+      "n_missing_parent_images": 7,
+      "n_added_images": 0
+    }
+  },
+  "r17": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.96,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r18": {
+    "split": "eval",
+    "decision": "HOLD",
+    "root_cause": "id_collision",
+    "violations": [
+      {
+        "family": "id_collision",
+        "detail": "11 duplicate annotation ids (e.g. [45, 58, 98, 108, 214]); id-based diff suppressed"
+      }
+    ],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_008.jpg referenced by image ids [8, 9]"
+      }
+    ],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": false,
+      "max_disp_px": 0.0,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  },
+  "r19": {
+    "split": "eval",
+    "decision": "PASS",
+    "root_cause": "clean",
+    "violations": [],
+    "warnings": [
+      {
+        "family": "duplicate_file_entry",
+        "detail": "images/frame_000.jpg referenced by image ids [1, 101]"
+      },
+      {
+        "family": "added_frames",
+        "detail": "1 new image ids vs parent (e.g. [101]) — vendor addition, human review only"
+      }
+    ],
+    "evidence": {
+      "n_images": 101,
+      "n_annotations": 698,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.88,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 1
+    }
+  },
+  "r20": {
+    "split": "eval",
+    "decision": "HOLD",
+    "root_cause": "class_swap",
+    "violations": [
+      {
+        "family": "class_swap",
+        "detail": "category names permuted vs declared map 'lm-3': {1: {'declared': 'car', 'shipped': 'pedestrian'}, 2: {'declared': 'pedestrian', 'shipped': 'car'}}"
+      }
+    ],
+    "warnings": [],
+    "evidence": {
+      "n_images": 100,
+      "n_annotations": 697,
+      "n_categories": 5,
+      "id_join_ok": true,
+      "max_disp_px": 0.95,
+      "n_shifted": 0,
+      "n_cat_changed": 0,
+      "frame_gaps": [],
+      "n_missing_parent_images": 0,
+      "n_added_images": 0
+    }
+  }
+}

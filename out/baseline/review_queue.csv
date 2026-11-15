@@ -1,0 +1,13 @@
+rank,item_id,score,reason,suggested_action,slice,evidence_path,reviewer,reviewer_decision,override_value,review_note,reviewed_at
+1,r01,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r01,,,,,
+2,r02,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r02,,,,,
+3,r03,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r03,,,,,
+4,r04,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r04,,,,,
+5,r05,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r05,,,,,
+6,r06,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r06,,,,,
+7,r07,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r07,,,,,
+8,r08,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r08,,,,,
+9,r09,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r09,,,,,
+10,r10,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,dev,releases/candidates/r10,,,,,
+11,r11,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,eval,releases/candidates/r11,,,,,
+12,r12,0.0,"JSON parses, schema keys present, all referenced files exist (no semantic invariant checked — baseline handout T06 §4)",PASS,eval,releases/candidates/r12,,,,,

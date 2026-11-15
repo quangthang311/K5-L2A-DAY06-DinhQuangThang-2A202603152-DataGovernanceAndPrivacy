@@ -1,0 +1,4 @@
+{"ts": "2026-11-13T21:14:22+00:00", "actor": "baseline", "action": "load", "item_id": "fixtures\\t06_release_gate", "before": null, "after": {"n_releases": 20}, "reason": "", "extra": {}}
+{"ts": "2026-11-13T21:17:11+00:00", "actor": "baseline", "action": "load", "item_id": "fixtures\\t06_release_gate", "before": null, "after": {"n_releases": 20}, "reason": "", "extra": {}}
+{"ts": "2026-11-13T21:20:05+00:00", "actor": "baseline", "action": "load", "item_id": "fixtures\\t06_release_gate", "before": null, "after": {"n_releases": 20}, "reason": "", "extra": {}}
+{"ts": "2026-11-13T22:33:20+00:00", "actor": "baseline", "action": "load", "item_id": "fixtures\\t06_release_gate", "before": null, "after": {"n_releases": 20}, "reason": "", "extra": {}}
